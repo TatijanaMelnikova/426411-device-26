@@ -68,24 +68,43 @@
             </div>
         </nav>
     </header>
-        <main class="">
-        <h1 class="">Моноподы для селфи</h1>
-        <ul class="">
-            <li class=""><a class="" href="index.html">главная</a></li>
-            <li class=""><a class="" href="catalog.html">каталог товаров</a></li>
-            <li class="">момноподы для селфи</li>
+        <main class="container">
+        <h1 class="page-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+            <li class="">
+                <a class="" href="index.html">главная</a>
+                <div class="breadcrumbs-line"></div>
+            </li>
+            <li class="">
+                <a class="" href="catalog.html">каталог товаров</a>
+                <div class="breadcrumbs-line"></div>
+            </li>
+            <li class="breadcrumbs-current">моноподы для селфи</li>
         </ul>
-        <aside class="">
+        <aside class="catalog-filter__wrap">
             <h1 class="visually-hidden">фильтр товаров</h1>
-            <form class="" method="get" action="#">
-                <label class="" id="price">Стоимость</label>
+            <!--TODO-->
+            фильтр:
+            сортировка:
+            по цене
+            по типу
+            по популярности
+            <div class="up"></div>
+            <div class="down"></div>
+
+            <form class="catalog-form" method="get" action="#">
+                <div class="form__line"></div>
+                <label class="catalog-form__title" id="price">Стоимость</label>
                 <input class="" for="price" type="range" min="0" max="5000" value="" step="1000">
+                <div class="form__line"></div>
                 <fieldset class="">
-                    <legend class="">Цвет</legend>
-                    <ul class="">
+                    <legend class="catalog-form__title">Цвет</legend>
+                    <ul class="catalog-form__checkboxes">
                         <li class="">
-                            <input id="colorBlack" type="checkbox" name="black" checked>
-                            <label for="colorBlack">Черный</label>
+                            <div class="checkbox">
+                                <input id="check" type="checkbox" name="black" checked>
+                            </div>
+                            <label for="check">Черный</label>
                         </li>
                         <li class="">
                             <input class="" id="colorWhite" type="checkbox" name="white">
@@ -105,9 +124,10 @@
                         </li>
                     </ul>
                 </fieldset>
+                <div class="form__line"></div>
                 <fieldset class="">
-                    <legend class="">Bluetooth</legend>
-                    <ul class="">
+                    <legend class="catalog-form__title">Bluetooth</legend>
+                    <ul class="catalog-form__radio">
                         <li class="">
                             <input id="onBluetooth" type="radio" name="bluetoothOption" checked>
                             <label for="onBluetooth">Есть</label>
@@ -118,73 +138,73 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button class="" type="submit">Показать</button>
+                <div class="form-button__line"></div>
+                <button class="form-button" type="submit">Показать</button>
             </form>
         </aside>
         <section class="">
-            <h1 class="visually-hidden">сортировка товаров</h1>
-            <!--тут будет форма-->
-            <ul class="">
-                <li class="">
+            <h1 class="visually-hidden">catalog товаров</h1>
+            <ul class="catalog-list">
+                <li class="catalog-item">
                     <h3 class="">
                         <a class="" href="#">
-                            <span class="">Любительская селфи-палка</span>
+                            <span class="catalog-title">Любительская селфи-палка</span>
                         </a>
                     </h3>
                     <p class="">
-                        <img class="" src="img/item-1.png" alt="набор для путешествий baxter of california">
+                        <img class="" src="img/item-1.png" width="360px" height="380px" alt="набор для путешествий baxter of california">
                     </p>
-                    <p class="">
-                        <span>500 p</span>
+                    <p class="catalog-item-price">
+                        <b>500 p</b>
                     </p>
                 </li>
-                <li class="">
+                <li class="catalog-item">
                     <h3 class="">
                         <a class="" href="#">
-                            <span class="">Профессиональная селфи-палка</span>
+                            <span class="catalog-title">Профессиональная селфи-палка</span>
                         </a>
                     </h3>
                     <p class="">
-                        <img class="" src="img/item-2.png" alt="набор для путешествий baxter of california">
+                        <img class="" src="img/item-2.png" width="360px" height="380px" alt="набор для путешествий baxter of california">
                     </p>
-                    <p class="">
-                        <span>1500 p</span>
+                    <p class="catalog-item-price">
+                        <b>1500 p</b>
                     </p>
                 </li>
-                <li class="">
+                <li class="catalog-item">
                     <h3 class="">
                         <a class="" href="#">
-                            <span class="">Непотопляемая селфи-палка</span>
+                            <span class="catalog-title">Непотопляемая селфи-палка</span>
                         </a>
                     </h3>
                     <p class="">
-                        <img class="" src="img/item-3.png" alt="набор для путешествий baxter of california">
+                        <img class="" src="img/item-3.png" width="360px" height="380px" alt="набор для путешествий baxter of california">
                     </p>
-                    <p class="">
-                        <span>2500 p</span>
+                    <p class="catalog-item-price">
+                        <b>2500 p</b>
                     </p>
                 </li>
-                <li class="">
+                <li class="catalog-item">
                     <h3 class="">
                         <a class="" href="#">
-                            <span class="">Селфи-палка "Следуй за мной"</span>
+                            <span class="catalog-title">Селфи-палка "Следуй за мной"</span>
                         </a>
                     </h3>
                     <p class="">
-                        <img class="" src="img/item-4.png" alt="набор для путешествий baxter of california">
+                        <img class="" src="img/item-4.png" width="360px" height="380px" alt="набор для путешествий baxter of california">
                     </p>
-                    <p class="">
-                        <span>4900 p</span>
+                    <p class="catalog-item-price">
+                        <b>4900 p</b>
                     </p>
                 </li>
             </ul>
-            <nav>
+            <nav class="pagination">
                 <ul class="pagination-list">
-                    <li class="pagination-item back"><a class="" href="#">назад</a></li>
-                    <li class="pagination-item"><a class="">1</a></li>
+                    <li class="pagination-item next-page"><a class="" href="#">назад</a></li>
+                    <li class="pagination-item active"><a class="">1</a></li>
                     <li class="pagination-item"><a class="" href="#">2</a></li>
                     <li class="pagination-item"><a class="" href="#">3</a></li>
-                    <li class="pagination-item next"><a class="" href="#">вперед</a></li>
+                    <li class="pagination-item next-page"><a class="" href="#">вперед</a></li>
                 </ul>
             </nav>
         </section>

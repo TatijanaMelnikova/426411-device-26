@@ -59,7 +59,12 @@ a {
 .delivery-list,
 .delivery-option,
 .brands,
-.aboutUs    {
+.aboutUs,
+.breadcrumbs,
+.catalog-form__checkboxes,
+.catalog-form__radio,
+.catalog-list,
+.pagination-list    {
     list-style: none;
 }
 
@@ -416,4 +421,111 @@ a {
     width: 960px;
     height: 559px;
     box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+    /* catalog */
+
+.page-title {
+    font-family: "Gilroy - Extra Bold";
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.17px;
+}
+
+.breadcrumbs-current,
+.breadcrumbs a{
+    opacity: 0.3;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+}
+.breadcrumbs-line {
+    width: 4px;
+    height: 4px;
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    transform: rotate(45deg);
+}
+.catalog-filter__wrap {
+    width: 468px;
+    height: 1287px;
+}
+.catalog-form__title  {
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+.form__line {
+    width: 201px;
+    height: 2px;
+    background-color: black;
+}
+.catalog-form fieldset  {
+    border: none;
+}
+.checkbox {
+    position:relative;
+    padding-left:25px;
+}
+
+/*TODO*/
+.checkbox input[type=checkbox] {
+    display:none;
+}
+
+.form-button    {
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.15px;
+    border: none;
+    background-color: white;
+}
+.form-button__line  {
+    background-color: #f0c52e;
+    width: 200px;
+    height: 8px;
+}
+.catalog-item a{
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+.catalog-item b{
+    color: #464646;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+.pagination {
+}
+
+/*TODO*/
+.pagination-list a{
+    opacity: 0.3;
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.91px;
+}
+.pagination-list a:hover{
+
+}
+.pagination-list a:hover{
+
 }
