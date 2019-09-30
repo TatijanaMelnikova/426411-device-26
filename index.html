@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Интернет магазине</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="main-navigation">
-            <a href="index.html">
-                <img class="logo-top" src="img/svg-device/logo-device.svg" alt="logo" width="100" height="50">
+            <a class="logo-header" href="index.html">
+                <img src="img/svg-device/logo-device.svg" alt="logo" width="163px" height="35px">
             </a>
             <form class="search-form">
                 <input class="search-button" id="search" type="submit" value="">
@@ -45,9 +46,9 @@
                         </ul>
                     </div>
                 </li>
-                <li><a class="site-navigation__link" href="#">доставка</a></li>
-                <li><a class="site-navigation__link" href="#">гарантия</a></li>
-                <li><a class="site-navigation__link" href="#">контакты</a></li>
+                <li class="site-nav__link"><a class="site-navigation__link" href="#">доставка</a></li>
+                <li class="site-nav__link"><a class="site-navigation__link" href="#">гарантия</a></li>
+                <li class="site-nav__link"><a class="site-navigation__link" href="#">контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -56,30 +57,32 @@
         <h1 class="visually-hidden">Device -- интернет - магазин электроники</h1>
         <section>
             <h2 class="visually-hidden">Новинки</h2>
-            <ol>
+            <ol class="promo">
                 <li>
                     <h3 class="visually-hidden">Длинная селфи-палка</h3>
                     <img src="img/slider-1.png" alt="фото длинной селфи-палки" width="384px" height="486px">
-                    <p class="promo-title"><strong>Делай селфи, как Бен Стиллер!</strong></p>
-                    <p class="promo-text">
-                        Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                    </p>
-                    <table class="info-table">
-                        <caption class="visually-hidden">Характеристики товара</caption>
-                        <tr>
-                            <td>Длина палки</td>
-                            <td class="info-table__big">8,5 м</td>
-                        </tr>
-                        <tr>
-                            <td>Вес палки</td>
-                            <td class="info-table__big">5 кг</td>
-                        </tr>
-                        <tr>
-                            <td>Материал</td>
-                            <td class="info-table__big">Карбон</td>
-                        </tr>
-                    </table>
-                    <a class="button" href="#">Подробнее</a>
+                    <div class="promo-description">
+                        <div class="promo-line"></div>
+                        <b>01</b>
+                        <p class="promo-title"><strong>Делай селфи, как Бен Стиллер!</strong></p>
+                        <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                        <table class="info-table">
+                            <caption class="visually-hidden">Характеристики товара</caption>
+                            <tr>
+                                <td>Длина палки</td>
+                                <td class="info-table__big">8,5 м</td>
+                            </tr>
+                            <tr>
+                                <td>Вес палки</td>
+                                <td class="info-table__big">5 кг</td>
+                            </tr>
+                            <tr>
+                                <td>Материал</td>
+                                <td class="info-table__big">Карбон</td>
+                            </tr>
+                        </table>
+                        <a class="button" href="#">Подробнее</a>
+                    </div>
                 </li>
                 <li class="visually-hidden">
                     <h3>Фитнес-браслет</h3>
@@ -119,27 +122,21 @@
             <h2 class="visually-hidden">Катерогии товаров</h2>
             <ul class="category-items">
                 <li>
-                    <div class="category-item"></div>
                     <a href="#">Виртуальная реальность</a>
                 </li>
                 <li>
-                    <div class="category-item"></div>
                     <a href="#">Моноподы для селфи</a>
                 </li>
                 <li>
-                    <div class="category-item"></div>
                     <a href="#">Экшн-камеры</a>
                 </li>
                 <li>
-                    <div class="category-item"></div>
                     <a href="#">Фитнес-браслеты</a>
                 </li>
                 <li>
-                    <div class="category-item"></div>
                     <a href="#">Умные часы</a>
                 </li>
                 <li>
-                    <div class="category-item"></div>
                     <a href="#">Квадрокоптеры</a>
                 </li>
             </ul>
@@ -163,7 +160,7 @@
         </section>
         <section>
             <h2 class="visually-hidden">Партнеры</h2>
-            <ul>
+            <ul class="partners">
                 <li>
                     <a href="#">DJI<img src=""></a>
                 </li>
@@ -223,7 +220,7 @@
             <li><a href="#">Контакты</a></li>
         </ul>
         <h2 class="visually-hidden">Ссылки на социальные страницы</h2>
-        <ul>
+        <ul class="social-links">
             <li><a href="#" aria-label="Фейсбук">faсebook</a></li>
             <li><a href="#" aria-label="Инстаграм">instagram</a></li>
             <li><a href="#" aria-label="Твиттер">twitter</a></li>
