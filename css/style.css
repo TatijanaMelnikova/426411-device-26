@@ -2,8 +2,7 @@
     font-family: "gilroy";
     src:
             url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
-            url("../fonts/Gilroy-Extrabold.woff") format("woff"),
-            url("../fonts/Gilroy-Extrabold.ttf") format("truetype");
+            url("../fonts/Gilroy-Extrabold.woff") format("woff")
     font-weight: 800;
 }
 body {
@@ -36,7 +35,7 @@ ol, ul {
   padding: 0;
 }
 
-.container {
+/* .container {
     width: 1160px;
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +44,7 @@ ol, ul {
 }
 .header-row {
     display: flex;
-    justify-content: space-between;
+
     padding-top: 53px;
 }
 .main-header {
@@ -155,7 +154,7 @@ ol, ul {
     top: 51px;
     left: 63px;
 }
-
+*/
 .promo {
   display: flex;
   justify-content: center;
