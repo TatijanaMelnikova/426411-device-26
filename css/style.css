@@ -644,3 +644,111 @@ footer {
 .copyright {
     font-size: 0;
 }
+
+/* BLOCK CATALOG */
+
+.catalog-title {
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.17px;
+    font-family: "gilroy", sans-serif;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.14px;
+    color: #000000;
+    opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs a:active{
+    opacity: 0.1;
+}
+
+.filter-titles {
+    font-family: "gilroy", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.91px;
+}
+
+.form-filter fieldset {
+    border: none;
+}
+
+.form-filter legend {
+    color: #000000;
+    font-family: "gilroy", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+
+.form-filter label {
+    color: #000000;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.14px;
+}
+
+.form-filter ul {
+    line-height: 40px;
+}
+
+.form-filter-input:hover + label,
+.form-filter-input:focus + label {
+    color: #000000;
+}
+
+.form-filter-input:disabled + label {
+    color: #a6a6a6;
+}
+
+.catalog-item a {
+    color: #000000;
+}
+
+.catalog-item h3 {
+    font-family: "gilroy", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+
+.catalog-item-price {
+    color: #464646;
+    font-family: Gilroy, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+
+.pagination a {
+    font-family: "gilroy", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.91px;
+    color: #000000;
+}
+
+.pagination a:focus,
+.pagination-item a:active {
+    opacity: 0.08;
+}
+
