@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Интернет магазине</title>
-    <link href="css/style.css" rel="stylesheet">
+    <title>Device | Интернет- магазин электронных товаров</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 </head>
 
 <body>
@@ -96,76 +96,53 @@
 
         <h2 class="visually-hidden">Новинки</h2>
 
-        <div class="promo-block  container">
+        <div class="container">
 
-            <input type="radio" id="promo-slider-item--1" name="promo-slides" checked>
-            <input type="radio" id="promo-slider-item--2" name= "promo-slides">
-            <input type="radio" id="promo-slider-item--3" name="promo-slides">
+            <input type="radio" id="promo-item--1" name="promo-slides" checked>
+            <input type="radio" id="promo-item--2" name= "promo-slides">
+            <input type="radio" id="promo-item--3" name="promo-slides">
 
-            <ul class="slider-controls">
-                <li>
-                    <label class="promo-slider-button--1" for="promo-slider-item--1">Первый</label>
-                </li>
-                <li>
-                    <label class="promo-slider-button--2" for="promo-slider-item--2">Второй</label>
-                </li>
-                <li>
-                    <label class="promo-slider-button--3" for="promo-slider-item--3">Третий</label>
-                </li>
-            </ul>
 
             <ol class="promo-list">
 
-                <li class="promo-item promo-slider-item--1">
+                <li class="promo-item promo-item--1">
 
-                    <div class="">
+                    <div class="promo-picture">
                         <h3 class="visually-hidden">Длинная селфи-палка</h3>
                         <img src="img/slider-1.png" alt="фото длинной селфи-палки" width="384" height="486">
                     </div>
 
                     <div class="promo-description">
 
-                        <div class="promo-number-block">
+                        <b class="promo-order">01</b>
 
-                            <div class="promo-line"></div>
-                            <b class="promo-number">01</b>
+                        <p class="promo-title"><strong>Делай селфи,<br> как Бен Стиллер!</strong></p>
+                        <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-                        </div>
+                        <table class="info-table">
 
-                        <div>
-                            <p class="promo-title"><strong>Делай селфи,<br> как Бен Стиллер!</strong></p>
-                            <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                            <caption class="visually-hidden">Характеристики товара</caption>
+                            <tr>
+                                <td>Длина палки</td>
+                                <td class="info-table__big">8,5 м</td>
+                            </tr>
+                            <tr>
+                                <td>Вес палки</td>
+                                <td class="info-table__big">5 кг</td>
+                            </tr>
+                            <tr>
+                                <td>Материал</td>
+                                <td class="info-table__big">Карбон</td>
+                            </tr>
+                        </table>
 
-                        </div>
-
-                        <div>
-                            <table class="info-table">
-
-                                <caption class="visually-hidden">Характеристики товара</caption>
-                                <tr>
-                                    <td>Длина палки</td>
-                                    <td class="info-table__big">8,5 м</td>
-                                </tr>
-                                <tr>
-                                    <td>Вес палки</td>
-                                    <td class="info-table__big">5 кг</td>
-                                </tr>
-                                <tr>
-                                    <td>Материал</td>
-                                    <td class="info-table__big">Карбон</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                       <div>
-                           <a class="button" href="#">Подробнее</a>
-                       </div>
+                        <a class="button promo-button" href="#">Подробнее</a>
 
                     </div>
 
                 </li>
 
-                <li class="promo-item promo-slider-item--2">
+                <li class="promo-item promo-item--2">
 
                     <div class="">
 
@@ -198,7 +175,7 @@
 
                 </li>
 
-                <li class="promo-item promo-slider-item--3">
+                <li class="promo-item promo-item--3">
 
                     <div>
                         <h3 class="visually-hidden">Квадрокоптер</h3>
@@ -234,6 +211,11 @@
                 </li>
             </ol>
 
+            <div class="promo-toggles">
+                <label class="promo-toggle--1" for="promo-item--1">Первый</label>
+                <label class="promo-toggle--2" for="promo-item--2">Второй</label>
+                <label class="promo-toggle--3" for="promo-item--3">Третий</label>
+            </div>
 
         </div>
 
