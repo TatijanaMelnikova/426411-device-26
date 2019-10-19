@@ -43,10 +43,6 @@ ol, ul {
     padding: 0;
 }
 
-input {
-    display: none;
-}
-
 .container {
     width: 1160px;
     margin-left: auto;
@@ -201,6 +197,10 @@ input {
 }
 
 /* BLOCK PROMO */
+.promo-block input {
+    display: none;
+}
+
 .promo-list {
     position: relative;
 
@@ -227,8 +227,8 @@ input {
     font-size: 0;
 
     position: absolute;
-    top: 520px;
-    left: 1100px;
+    left: 1130px;
+    top: 300px;
 }
 
 .slider-controls li {
@@ -271,7 +271,8 @@ input {
 
 .promo-block {
     position: absolute;
-    top: -100px;
+    top: -115px;
+    margin-left: -150px;
 }
 
 .promo-item {
@@ -280,7 +281,7 @@ input {
     padding-left: 90px;
     padding-right: auto;
 
-    width: 1010px;
+    width: 1130px;
     height: 486px;
 }
 
@@ -297,6 +298,18 @@ input {
     background: #ffffff;
 }
 
+.promo-description {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 125px;
+}
+
+.promo-description div:nth-of-type(4) {
+    order: 1;
+
+}
+
 .promo-number-block {
    display: flex;
    justify-content: space-between;
@@ -304,10 +317,10 @@ input {
 
 .promo-number {
     width: 166px;
-    height: 131px;
+    height: 130px;
 
     font-family: "gilroy", sans-serif;
-    font-size: 179px;
+    font-size: 180px;
     font-weight: 400;
     line-height: 179.2px;
     letter-spacing: 0.36px;
@@ -315,8 +328,9 @@ input {
 }
 
 .promo-title {
-    width: 394px;
-    height: 98px;
+    width: 395px;
+    height: 100px;
+    margin-top: -45px;
 
     font-family: "gilroy", sans-serif;
     font-size: 47px;
@@ -326,8 +340,11 @@ input {
 }
 
 .promo-text {
-    width: 479px;
-    height: 46px;
+    margin-top: -20px;
+    margin-bottom: 70px;
+
+    width: inherit;
+    height: auto;
 
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
@@ -335,6 +352,8 @@ input {
     line-height: 30px;
     letter-spacing: 0.15px;
     color: #464646;
+
+    border: 1px solid black;
 }
 
 .button {
@@ -350,7 +369,10 @@ input {
 }
 
 .info-table {
-    margin-top: 75px;
+    margin-top: 70px;
+
+    width: 100%;
+    border: 1px solid black;
 
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
@@ -358,6 +380,24 @@ input {
     line-height: 20px;
     letter-spacing: 0.13px;
     color: #464646;
+}
+
+.info-table tbody {
+    display: flex;
+}
+
+.info-table tbody tr{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+    padding-right: 80px;
+
+    border: 1px solid green;
+}
+
+.info-table tr {
+
 }
 
 .info-table__big {
@@ -476,6 +516,10 @@ input {
 }
 
 /* BLOCK ADVANTAGES */
+
+.advantages-slader input {
+    display: none;
+}
 
 .advantages-slader {
     display: block;

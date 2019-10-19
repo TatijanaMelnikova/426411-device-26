@@ -5,6 +5,7 @@
     <title>Интернет магазине</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 </head>
 
 <body>
@@ -97,9 +98,9 @@
 
         <div class="promo-block  container">
 
-            <input type="radio" id="promo-slider-item--1" name="slides" checked>
-            <input type="radio" id="promo-slider-item--2" name= "slides">
-            <input type="radio" id="promo-slider-item--3" name="slides">
+            <input type="radio" id="promo-slider-item--1" name="promo-slides" checked>
+            <input type="radio" id="promo-slider-item--2" name= "promo-slides">
+            <input type="radio" id="promo-slider-item--3" name="promo-slides">
 
             <ul class="slider-controls">
                 <li>
@@ -122,7 +123,7 @@
                         <img src="img/slider-1.png" alt="фото длинной селфи-палки" width="384" height="486">
                     </div>
 
-                    <div class="">
+                    <div class="promo-description">
 
                         <div class="promo-number-block">
 
@@ -131,26 +132,34 @@
 
                         </div>
 
-                        <p class="promo-title"><strong>Делай селфи, как Бен Стиллер!</strong></p>
-                        <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                        <div>
+                            <p class="promo-title"><strong>Делай селфи,<br> как Бен Стиллер!</strong></p>
+                            <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-                        <table class="info-table">
-                            <caption class="visually-hidden">Характеристики товара</caption>
-                            <tr>
-                                <td>Длина палки</td>
-                                <td class="info-table__big">8,5 м</td>
-                            </tr>
-                            <tr>
-                                <td>Вес палки</td>
-                                <td class="info-table__big">5 кг</td>
-                            </tr>
-                            <tr>
-                                <td>Материал</td>
-                                <td class="info-table__big">Карбон</td>
-                            </tr>
-                        </table>
+                        </div>
 
-                        <a class="button" href="#">Подробнее</a>
+                        <div>
+                            <table class="info-table">
+
+                                <caption class="visually-hidden">Характеристики товара</caption>
+                                <tr>
+                                    <td>Длина палки</td>
+                                    <td class="info-table__big">8,5 м</td>
+                                </tr>
+                                <tr>
+                                    <td>Вес палки</td>
+                                    <td class="info-table__big">5 кг</td>
+                                </tr>
+                                <tr>
+                                    <td>Материал</td>
+                                    <td class="info-table__big">Карбон</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                       <div>
+                           <a class="button" href="#">Подробнее</a>
+                       </div>
 
                     </div>
 
@@ -280,9 +289,9 @@
 
         <div class="advantages-wrap">
 
-            <input type="radio" id="advantages-slider-item--1" name="slides" checked>
-            <input type="radio" id="advantages-slider-item--2" name= "slides">
-            <input type="radio" id="advantages-slider-item--3" name="slides">
+            <input type="radio" id="advantages-slider-item--1" name="advantages-slides" checked>
+            <input type="radio" id="advantages-slider-item--2" name="advantages-slides">
+            <input type="radio" id="advantages-slider-item--3" name="advantages-slides">
 
             <ul class="advantages-slider-buttons">
                 <li>
@@ -351,27 +360,38 @@
     </section>
 
     <section class="aboutUs container">
+
         <div class="aboutUs-wrap">
+
             <div class="aboutUs">
+
                 <h2 class="visually-hidden">Информация о нас</h2>
                 <h3 class="aboutUs-title">О нас</h3>
                 <p class="aboutUs-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                 <p class="aboutUs-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+
                 <ol>
                     <li>Деловые Линии</li>
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ol>
+
                 <a class="button" href="#">Подробнее о нас</a>
+
             </div>
+
             <div class="contacts">
+
                 <h2 class="visually-hidden">Наши контакты</h2>
                 <h3 class="aboutUs-title">Контакты</h3>
                 <p class="aboutUs-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                 <img src="img/map.png" alt="г. Москва, ул. Строителей, 15" width="560" height="222"><br>
                 <a class="button" href="#">Напишите нам</a>
+
             </div>
+
         </div>
+
     </section>
 
 </main>
