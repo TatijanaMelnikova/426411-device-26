@@ -19,14 +19,18 @@ body {
 }
 .visually-hidden {
     position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    border: 0;
     padding: 0;
     margin: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    width: 1px;
+    height: 1px;
+
+    border: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -35,8 +39,12 @@ ol , li {
 }
 
 ol, ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    display: none;
 }
 
 .container {
@@ -50,19 +58,19 @@ ol, ul {
 /* MAIN HEADER */
 
 .main-header {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 
-  height: 300px;
-  padding-left: 60px;
-  padding-right: 60px;
+    height: 300px;
+    padding-left: 60px;
+    padding-right: 60px;
 
-  background-color: rgba(240, 197, 46, 0.5);
+    background-color: rgba(240, 197, 46, 0.5);
 }
 
 .main-logo {
@@ -193,6 +201,65 @@ ol, ul {
 }
 
 /* BLOCK PROMO */
+.promo-list {
+    position: relative;
+
+}
+
+.promo-item {
+    position: absolute;
+
+    opacity: 0;
+
+    transition:
+            opacity .3s,
+            transform 5s;
+}
+
+#promo-slider-item--1:checked ~ .promo-list .promo-slider-item--1,
+#promo-slider-item--2:checked ~ .promo-list .promo-slider-item--2,
+#promo-slider-item--3:checked ~ .promo-list .promo-slider-item--3 {
+    opacity: 1;
+}
+
+.slider-controls {
+    display: flex;
+    font-size: 0;
+
+    position: absolute;
+    top: 520px;
+    left: 1100px;
+}
+
+.slider-controls li {
+    display: block;
+
+    width: 30px;
+    height: 30px;
+}
+
+.slider-controls li label{
+    display: inline-block;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url("../img/svg-device/slider-button-empty.svg");
+    background-repeat: no-repeat;
+}
+
+#promo-slider-item--1:checked ~ .slider-controls .promo-slider-button--1,
+#promo-slider-item--2:checked ~ .slider-controls .promo-slider-button--2,
+#promo-slider-item--3:checked ~ .slider-controls .promo-slider-button--3 {
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/svg-device/slider-button.svg");
+    background-repeat: no-repeat;
+}
+
 
 .promo {
     display: flex;
@@ -207,7 +274,7 @@ ol, ul {
     top: -100px;
 }
 
-.promo-list {
+.promo-item {
     display: flex;
     justify-content: space-between;
     padding-left: 90px;
@@ -410,7 +477,7 @@ ol, ul {
 
 /* BLOCK ADVANTAGES */
 
-.advantages {
+.advantages-slader {
     display: block;
     position: relative;
     margin-left: auto;
@@ -425,82 +492,128 @@ ol, ul {
 }
 
 .advantages-wrap {
-    display: flex;
+    display:flex;
     position: absolute;
     margin-left: 140px;
     margin-right: 140px;
     top: -84px;
+
+    width: 1200px;
+    height: inherit;
+
+    border:1px solid green;
 }
 
-.advantages-navigation {
-    padding-top: 30px;
-
-    height: 320px;
-    width: 278px;
-
-    border-right: 7px solid #000000;
-}
-
-.advantages-content {
+.advantages-slider-buttons {
     display: block;
-    margin-left: 116px;
-}
 
-.advantages-lists {
-    font-family: "gilroy",sans-serif;
+    padding-top: 30px;
+    padding-bottom: auto;
+    width: 280px;
+    height: auto;
+
+    font-family: "gilroy", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 2.15px;
+    color: #000000;
+
+    border-right: 7px solid #000000;
 }
 
-.advantages-list {
-    display: block;
+.advantages-slider-buttons li label{
+    display: inline-block;
+    margin-top: 25px;
+    vertical-align: middle;
 
-    width: 278px;
+    height: 40px;
+
+    background-color: #f0c52e;
+}
+
+#advantages-slider-item--1:checked ~ .advantages-slider-buttons .advantages-slider-button--1,
+#advantages-slider-item--2:checked ~ .advantages-slider-buttons .advantages-slider-button--2,
+#advantages-slider-item--3:checked ~ .advantages-slider-buttons .advantages-slider-button--3 {
+    background-color: #000000;
+    color: #f7e184;
     height: 40px;
 }
 
-.advantages-list--activ {
-    color: #f7e184;
-    background-color: #000000;
-}
-.advantages-content {
-    width: 426px;
-    height: 157px;
+.advantages-slider-list {
     position: relative;
+
+    height: inherit;
+    width: 80%;
+
+    border: 1px solid red;
 }
-.advantages-title {
-    font-family: "gilroy",sans-serif;
+
+.advantages-slider-item {
+    position: absolute;
+    padding-left: 115px;
+
+    height: 150px;
+    width: inherit;
+
+
+    opacity: 0;
+
+    transition:
+      opacity .3s,
+      transform 5s;
+}
+
+.advantages-icon--delivery {
+    background-image: url("../img/svg-device/delivery.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.advantages-icon--credit {
+    background-image: url("../img/svg-device/credit.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.advantages-icon--warranty {
+    background-image: url("../img/svg-device/warranty.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.advantages-slider-item h3 {
+    font-family: "gilroy", sans-serif;
     font-size: 47px;
     font-weight: 400;
     line-height: 48px;
     letter-spacing: 0.21px;
+    color: #000000;
 }
-.advantages-text {
-    color: #464646;
 
-    font-family: "Open Sans",sans-serif;
+.advantages-slider-item p {
+    width: 450px;
+
+    font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0.15px;
+    color: #464646;
 }
-.advantages-icon {
-    display: block;
-    position: absolute;
-    left: 534px;
-    top: -10px;
 
-    width: 200px;
-    height: 200px;
 
-    background-position: center;
-    background-repeat: no-repeat;
+#advantages-slider-item--1:checked ~ .advantages-slider-list .advantages-slider-item--1,
+#advantages-slider-item--2:checked ~ .advantages-slider-list .advantages-slider-item--2,
+#advantages-slider-item--3:checked ~ .advantages-slider-list .advantages-slider-item--3 {
+    opacity: 1;
 }
-.advantages-icon--delivery {
-    background-image: url("../img/svg-device/delivery.svg");
+
+#advantages-slider-item--1:checked ~ .advantages-slider-buttons .advantages-slider-button--1,
+#advantages-slider-item--2:checked ~ .advantages-slider-buttons .advantages-slider-button--2,
+#advantages-slider-item--3:checked ~ .advantages-slider-buttons .advantages-slider-button--3 {
+    font-weight: bold;
 }
 
 /* BLOCK ABOUTUS */
@@ -751,4 +864,3 @@ footer {
 .pagination-item a:active {
     opacity: 0.08;
 }
-
